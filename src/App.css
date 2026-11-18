@@ -94,3 +94,133 @@ body {
   text-align: center;
   padding: 40px;
 }
+.search-input {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px 14px;
+  font-size: 15px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+.search-input:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.sort-select {
+  padding: 10px 14px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 14px;
+  background: white;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #475569;
+  font-size: 14px;
+  cursor: pointer;
+}
+.button {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  font-size: 13px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+.button--danger {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.button--danger:hover {
+  background: #fecaca;
+}
+.add-form {
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  padding: 18px;
+  margin-bottom: 24px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 12px;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+.add-form h3 {
+  grid-column: 1 / -1;
+  margin: 0 0 6px;
+  color: #0f172a;
+  font-size: 18px;
+}
+
+.add-form input[type="text"],
+.add-form input[type="date"] {
+  padding: 10px 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 14px;
+  font-family: inherit;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.add-form input:focus {
+  outline: none;
+  border-color: #2563eb;
+}
+
+.button--primary {
+  background: #2563eb;
+  color: #ffffff;
+  padding: 10px 16px;
+  font-weight: 600;
+  margin-top: 0;
+}
+
+.button--primary:hover {
+  background: #1d4ed8;
+}
+.empty-state {
+  text-align: center;
+  padding: 50px 20px;
+  background: #ffffff;
+  border: 2px dashed #cbd5e1;
+  border-radius: 10px;
+  color: #475569;
+}
+
+.empty-state__hint {
+  font-size: 13px;
+  color: #94a3b8;
+  margin-top: 8px;
+}
+
+.button--link {
+  background: transparent;
+  color: #2563eb;
+  text-decoration: underline;
+  padding: 8px;
+  font-size: 13px;
+  margin-top: 0;
+}
+
+.button--link:hover {
+  color: #1d4ed8;
+}
